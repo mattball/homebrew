@@ -28,8 +28,8 @@ class Gmediaserver < Formula
 end  
 
 __END__
---- gmediaserver-0.13.0 CHANGED/src/metadata.c	2007-10-20 11:41:32.000000000 +0200
-+++ gmediaserver-0.13.0/src/metadata.c	2009-12-20 23:06:57.000000000 +0100
+--- a/src/metadata.c	2007-10-20 11:41:32.000000000 +0200
++++ b/src/metadata.c	2009-12-20 23:06:57.000000000 +0100
 @@ -1018,7 +1018,7 @@
  bool
  init_metadata(void)
