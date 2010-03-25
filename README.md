@@ -1,36 +1,38 @@
 Homebrew
 ========
-Homebrew helps you install the UNIX tools that didn't come with OS X.
+Features and usage are [summarized on the homepage][homepage].
 
 
-Quick Install
--------------
-Install [Xcode][xcode] and then run this script: <http://gist.github.com/323731>
-
-If you want to install Homebrew somewhere other than /usr/local see the
-[installation instructions][install].
+Quick Install to /usr/local
+---------------------------
+Run <http://gist.github.com/323731> and afterwards, [install Xcode][xcode].
 
 
-Look dude, I know what I'm doing!
----------------------------------
-Alright then… as long as you're sure:
-
-    cd /usr/local
-    sudo chown -R $USER .
-    curl -Lsf http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1
+Umm… I thought I could install it anywhere?
+-------------------------------------------
+Indeed, you can. Refer to our [complete installation instructions][install].
 
 
-The Wiki
---------
-The [wiki][] can answer your remaining questions.
+Dude! Just give me a two-liner!
+-------------------------------
+Alright then… as long as you know what you are doing:
+
+    sudo chown -R $USER /usr/local
+    curl -Lsf http://github.com/mxcl/homebrew/tarball/master | tar xvz -C/usr/local --strip 1
+
+
+More Documentation
+==================
+The [wiki][] is your friend.
 
 
 Who Are You?
-------------
+============
 I'm [Max Howell][mxcl] and I'm a splendid chap.
 
 
 [wiki]:http://wiki.github.com/mxcl/homebrew
-[install]:http://wiki.github.com/mxcl/homebrew/Installation
+[install]:http://wiki.github.com/mxcl/homebrew/installation
 [xcode]:http://developer.apple.com/technology/xcode.html
 [mxcl]:http://twitter.com/mxcl
+[homepage]:http://mxcl.github.com/homebrew

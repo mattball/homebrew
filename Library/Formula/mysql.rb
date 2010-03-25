@@ -2,8 +2,8 @@ require 'formula'
 
 class Mysql <Formula
   homepage 'http://dev.mysql.com/doc/refman/5.1/en/'
-  url 'http://mysql.llarian.net/Downloads/MySQL-5.1/mysql-5.1.43.tar.gz'
-  md5 '451fd3e8c55eecdf4c3ed109dce62f01'
+  url 'http://mysql.llarian.net/Downloads/MySQL-5.1/mysql-5.1.45.tar.gz'
+  md5 '06b5deb3a13c7600c38ba65b9f7e42c4'
 
   depends_on 'readline'
 
@@ -83,7 +83,7 @@ class Mysql <Formula
       <key>UserName</key>
       <string>#{`whoami`.chomp}</string>
       <key>WorkingDirectory</key>
-      <string>#{HOMEBREW_PREFIX}/var</string>
+      <string>#{var}</string>
     </dict>
     </plist>
     EOPLIST
