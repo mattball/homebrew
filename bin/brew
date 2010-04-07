@@ -365,6 +365,10 @@ begin
   when 'branch', 'checkout', 'pull', 'push', 'rebase', 'reset'
     onoe "Unknown command: #{arg} (did you mean 'git #{arg}'?)"
 
+  when 'doctor'
+    require 'brew_doctor'
+    brew_doctor
+
   else
     onoe "Unknown command: #{arg}"
   end
