@@ -134,7 +134,7 @@ class Formula
   
   # reimplement if we don't autodetect the download strategy you require
   def download_strategy
-    if @specs
+    if @specs and @url == @head
       vcs = @specs.delete :using
       if vcs != nil
         # If a class is passed, assume it is a download strategy
@@ -475,7 +475,7 @@ private
 
     def depends_on name
       @deps ||= []
-      @external_deps ||= {:python => [], :ruby => [], :perl => []}
+      @external_deps ||= {:python => [], :perl => [], :ruby => [], :jruby => []}
 
       case name
       when String
@@ -483,7 +483,7 @@ private
       when Hash
         key, value = name.shift
         case value
-        when :python, :ruby, :perl
+        when :python, :perl, :ruby, :jruby
           @external_deps[value] << key
           return
         when :optional, :recommended
