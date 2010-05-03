@@ -12,6 +12,10 @@ class R <Formula
     system "make"
     system "make install"
     system "mkdir #{prefix}/bin"
-    system "ln -s #{prefix}/R.framework/Resources/R #{prefix}/bin/R"
+    system "ln -s #{prefix}/R.framework/Resources/bin/R #{prefix}/bin/R"
+    system "ln -s #{prefix}/R.framework/Resources/bin/Rscript #{prefix}/bin/Rscript"
+    system "mkdir -p #{prefix}/share/man/man1"
+    system "ln -s #{prefix}/R.framework/Resources/man1/R.1 #{prefix}/share/man/man1/R.1"
+    system "ln -s #{prefix}/R.framework/Resources/man1/Rscript.1 #{prefix}/share/man/man1/Rscript.1"
   end
 end
