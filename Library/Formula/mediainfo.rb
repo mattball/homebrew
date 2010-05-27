@@ -5,7 +5,6 @@ class Mediainfo <Formula
   homepage 'http://mediainfo.sourceforge.net'
   md5 '9df4cf265802bae929450954f15a46d1'
 
-#  depends_on 'zenlib'
   depends_on 'pkg-config'
 
   def install
