@@ -2,7 +2,7 @@ require 'formula'
 
 class Tsmuxer <Formula
   url 'http://www.smlabs.net/tsMuxer/tsMuxeR_1.10.6.dmg'
-  homepage 'http://www.smlabs.net/tsMuxer'
+  homepage 'http://www.smlabs.net/tsmuxer_en.html'
   md5 '4c363f84d5ba9d59608b442aa1c024f7'
 
   def install
